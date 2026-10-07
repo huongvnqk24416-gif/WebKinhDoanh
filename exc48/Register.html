@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+            .label {
+                display: inline-block;
+                width: 200px;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body bgcolor="lightblue">
+        <div align="center">
+            <img src="images/Jackson.gif">
+        </div>
+        <h1 align="center">Register Form</h1>
+        <form>
+            <p align="center">
+                Register your Jacksson Electronics product here
+            </p>
+            <p>
+                <label class="label" for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name">
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name">
+            </p>
+            <p>
+                <label class="label" for="address1">Address #1:</label>
+                <input type="text" name="address1" id="address1" size="40">
+            </p>
+            <p>
+                <label class="label" for="address2">Address #2:</label>
+                <input type="text" name="address2" id="address2" size="40">
+            </p>
+            <p>
+                <label class="label" for="city">City:</label>
+                <input type="text" name="city" id="city">
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" size="2">
+                <label for="zip">Zip:</label>
+                <input type="text" name="zip" id="zip" size="5">
+            </p>
+            <p>
+                <label class="label" for="country">Country:</label>
+                <input type="text" name="country" id="country">
+            </p>
+            <hr>
+            <p>
+                <label class="label" for="product">Product:</label>
+                <select name="product" id="product">
+                    <option value="">--Chọn sản phẩm--</option>
+                    <option value="product1">Sản phẩm 1</option>
+                    <option value="product2">Sản phẩm 2</option>
+                    <option value="product3">Sản phẩm 3</option>
+                </select>
+            </p>
+            <p>
+                <label class="label" for="date_purchased">Date Purchased:</label>
+                <input type="date" name="date_purchased" id="date_purchased">
+            </p>
+            <p>
+                <label class="label" for="serial_number">Serial #:</label>
+                <input type="text" name="serial_number" id="serial_number">
+            </p>
+            <p>
+                <label class="label">Used for:</label>
+                <input type="radio" name="used_for" value="Home" id="home"> <label class="label" for="home">Home</label>
+                <input type="radio" name="used_for" value="Educational Institution" id="educational"> <label class="label" for="educational">Educational Institution</label>
+                <div class="label">&nbsp;</div>
+                <input type="radio" name="used_for" value="Business" id="business"> <label class="label" for="business">Business</label>
+                <input type="radio" name="used_for" value="Other" id="other"> <label class="label" for="other">Other</label>
+            </p>
+            <p>
+                <label class="label">System (check all that apply):</label>
+                <input type="checkbox" name="system" value="Windows" >Windows
+                <input type="checkbox" name="system" value="Unix" >Unix 
+                <div class="label">&nbsp;</div>
+                <input type="checkbox" name="system" value="Macintosh" >Macintosh
+                <input type="checkbox" name="system" value="Other" >Other
+            </p>
+            <hr>
+            <p>
+                <label class="label" for="comments">Comments?:</label>
+                <textarea name="comments" id="comments" rows="5" cols="60"></textarea>
+            </p>
+            <p align="center">
+                <input type="submit" value="Click to register">
+                <input type="reset" value="Click to cancel">
+        </form>
+    </body>
+</html>

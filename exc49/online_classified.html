@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Tiêu đề trang</title>
+        <style>
+            .cols { display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 360px; 
+                margin-left: 10px; }
+            .cols3 { display: grid;
+                grid-template-columns: auto auto auto; 
+                gap: 2px 8px;
+                margin-left: 10px; 
+                font-size: 14px; }
+        </style>
+    </head>
+    <body bgcolor="lightblue">
+        <h1 style="color: red;"> Online Classifieds Search Form</h1>
+        <br>
+        <form action="search_results.html" method="get">
+             <h2> 1) Search for a classified in the following sections:</h2>
+                <div class="cols">
+                    <label><input type="radio" name="section" value="employment"> Employment</label>
+                    <label><input type="radio" name="section" value="personal"> Personal</label>
+                    <label><input type="radio" name="section" value="for_sale"> For Sale</label>
+                    <label><input type="radio" name="section" value="miscellaneous"> Miscellaneous</label>
+                    <label><input type="radio" name="section" value="housing"> Housing</label>
+                    <label><input type="radio" name="section" value="all"> All of the above</label>
+                </div>
+            <h2> 2) Search the following publications:</h2>
+            <div class="cols3">
+                <label><input type="checkbox" name="publication" value="midwest_times"> Midwest Times</label>
+                <label><input type="checkbox" name="publication" value="modern_news"> Modern News</label>
+                <label><input type="checkbox" name="publication" value="employment_today"> Employment Today</label>
+                <label><input type="checkbox" name="publication" value="great_lakes_classifieds"> Great Lakes Classifieds </label>
+                <label><input type="checkbox" name="publication" value="middleton_daily"> Middleton Daily</label>
+                <label><input type="checkbox" name="publication" value="cashtown_daily_news"> Cashtown Daily News</label>
+            </div>
+            <h2> 3) From
+                <input type="date" name="from_date"> to <input type="date" name="to_date"></i>
+            </h2>
+            <h2> 4) Enter a few keywords to describe the classified:</h2>
+            <input type="text" name="keywords" size="100">
+            <h2> 5)Click one of the options below:</h2>
+            <p align="center">
+                <button type="button" onclick="doSearch()"><img src="images/search.gif" alt="Search"></button>
+                <button type="button" class="help" onclick="doHelp()"><img src="images/help.gif" alt="Help"></button>
+                <button type="reset"><img src="images/cancel.gif" alt="Cancel"></button>
+            </p>
+            <script>
+                function doSearch() {
+                    alert("Searching for classifieds...");
+                }
+                function doHelp() {
+                    window.open("help.html", "_blank");
+                }
+            </script>
+        </form>
+    </body>
+</html>
